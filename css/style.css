@@ -1,0 +1,99 @@
+/* Containing the content & aligning center */
+
+.container{
+	/* Positioning */
+	margin: 0 auto;
+	/* Box model */
+	width: 60%;
+}
+
+h1{
+	/* Positioning */
+	padding: 0 10px;
+	/* Box Model */
+	text-align: center;
+	/* Type */
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Open Sans';
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion{
+	/* Positioning */
+	padding: 18px;
+	/* Box model */
+	width: 100%;
+	/* Typographic */
+	font-family: Montserrat;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: left;
+	/* Visual */
+	background: #32ba96;
+	border: none;
+	border-bottom-style: solid;
+	outline: none;
+	color: #fff;
+	/* Misc */
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+button.accordion.active, 
+button.accordion:hover{
+	/* Visual */
+	background: rgb(221, 221, 221);
+}
+
+/* Add a symbol to each button to indicate whether the collapsible content is open or closed */
+button.accordion:after{
+	/* Positioning */
+	float: right;
+	/* Box model */
+	margin-left: 5px;
+	/* Type */
+	font-family: FontAwesome;
+	content: '\f067';/* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #fff;
+
+}
+
+button.accordion.active:after{
+	font-family: FontAwesome;
+	content: "\f068"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: Content hidden by default */
+
+div.panel{
+	/* Positioning */
+	padding: 0 18px;
+	/* Box model */
+	max-height: 0;
+	/* Visual */
+	background-color: #fff;
+	overflow: hidden;
+	/* Misc */
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+
+div.panel.show{
+	max-height: 100%;
+	display: block !important;
+	opacity: 1;
+}
+
+
+
+
