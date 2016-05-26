@@ -4,7 +4,7 @@
 	/* Positioning */
 	margin: 0 auto;
 	/* Box model */
-	width: 60%;
+	width: 90%;
 }
 
 h1{
@@ -47,7 +47,7 @@ button.accordion{
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 button.accordion.active, 
-button.accordion:hover{
+button.accordion:active{
 	/* Visual */
 	background: rgb(221, 221, 221);
 }
@@ -82,7 +82,6 @@ div.panel{
 	background-color: #fff;
 	overflow: hidden;
 	/* Misc */
-	transition: 0.6s ease-in-out;
 	opacity: 0;
 }
 
