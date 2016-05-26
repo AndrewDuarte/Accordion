@@ -7,6 +7,14 @@
 	width: 90%;
 }
 
+img{
+	/* Positioning */
+	margin: auto;
+	margin-bottom: 25px;
+	/* Box Model */
+	display: block;
+}
+
 h1{
 	/* Positioning */
 	padding: 0 10px;
@@ -46,11 +54,12 @@ button.accordion{
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
-button.accordion.active, 
+button.accordion.active,
 button.accordion:active{
 	/* Visual */
 	background: rgb(221, 221, 221);
 }
+
 
 /* Add a symbol to each button to indicate whether the collapsible content is open or closed */
 button.accordion:after{
